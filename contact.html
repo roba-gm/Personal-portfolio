@@ -4,149 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me -> Roba's Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-contact">
 
-    <header>
-        <h1>Contact Me</h1>
-        <p>I welcome questions, ideas, feedback, and opportunities to connect.</p>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">  About Me</a> | 
-            <a href="skills.html">  Skills</a> | 
-            <a href="projects.html">  Projects</a> | 
-            <a href="media.html">  My Media</a> | 
-            <a href="contact.html">  Contact Me</a>
-        </nav>
+    <header id="main-header">
+        <div class="header-inner">
+            <div>
+                <h1 id="site-title">Contact Me</h1>
+                <p class="site-subtitle">I welcome questions, ideas, feedback, and opportunities to connect.</p>
+            </div>
+            <nav class="navbar-block">
+                <a href="index.html" class="nav-link">Home</a> | 
+                <a href="about.html" class="nav-link">About Me</a> | 
+                <a href="skills.html" class="nav-link">Skills</a> | 
+                <a href="projects.html" class="nav-link">Projects</a> | 
+                <a href="media.html" class="nav-link">My Media</a> | 
+                <a href="contact.html" class="nav-link active">Contact Me</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:robagm17@gmail.com">robagm17@gmail.com</a></p>
-            <p><strong>Website:</strong> Roba's Personal Profile Website</p>
-            
+    <main id="main-content">
+        <section class="page-section">
+            <h2 class="section-heading">Contact Information</h2>
+            <p class="body-text"><strong>Email:</strong> <a href="mailto:robagm17@gmail.com">robagm17@gmail.com</a></p>
+            <p class="body-text"><strong>Website:</strong> Roba's Personal Profile Website</p>
         </section>
 
-        <hr>
-
-        <section>
-            <h2>Send Me a Message</h2>
-            <form action="#" method="post">
+        <section class="page-section">
+            <h2 class="section-heading">Send Me a Message</h2>
+            <form action="#" method="post" id="contact-form">
 
                 <fieldset>
                     <legend>Personal Information</legend>
                     
-                    <p>
-                        <label for="fullname">Full Name:</label><br>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-                    </p>
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required class="form-input">
+                    </div>
                     
-                    <p>
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                    </p>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required class="form-input">
+                    </div>
                     
-                    <p>
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="+251 9XX XXX XXX" pattern="[\+]?[0-9\s\-]{9,15}">
-                    </p>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+251 9XX XXX XXX" pattern="[\+]?[0-9\s\-]{9,15}" class="form-input">
+                    </div>
                     
-                    <p>
-                        <label for="website">Your Website:</label><br>
-                        <input type="url" id="website" name="website" placeholder="https://example.com">
-                    </p>
+                    <div class="form-group">
+                        <label for="website" class="form-label">Your Website:</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com" class="form-input">
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Message Details</legend>
                     
-                    <p>
-                        <label for="subject">Position:</label><br>
-                        <select id="subject" name="subject" required>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Position:</label>
+                        <select id="subject" name="subject" required class="form-select">
                             <option value="">-- Select a position --</option>
                             <option value="general">General Inquiry</option>
                             <option value="collaboration">Project Collaboration</option>
                             <option value="networking">Networking &amp; Security</option>
                             <option value="feedback">Website Feedback</option>
                         </select>
-                    </p>
+                    </div>
 
-                    <p>
-                        <strong>How did you find my website?</strong><br>
-                        <input type="radio" id="find-search" name="referral" value="search">
-                        <label for="find-search">Search Engine</label><br>
+                    <div class="form-group">
+                        <strong class="form-label">How did you find my website?</strong>
+                        <div style="margin-top: 0.5rem;" class="body-text">
+                            <input type="radio" id="find-search" name="referral" value="search">
+                            <label for="find-search">Search Engine</label><br>
 
-                        <input type="radio" id="facebook" name="referral" value="facebook">
-                        <label for="facebook">Facebook</label><br>
+                            <input type="radio" id="facebook" name="referral" value="facebook">
+                            <label for="facebook">Facebook</label><br>
 
-                        <input type="radio" id="tiktok" name="referral" value="tiktok">
-                        <label for="tiktok">TikTok</label><br>
+                            <input type="radio" id="tiktok" name="referral" value="tiktok">
+                            <label for="tiktok">TikTok</label><br>
 
-                        <input type="radio" id="linkedin" name="referral" value="linkedin">
-                        <label for="linkedin">LinkedIn</label><br>
+                            <input type="radio" id="linkedin" name="referral" value="linkedin">
+                            <label for="linkedin">LinkedIn</label><br>
 
-                        <input type="radio" id="instagram" name="referral" value="instagram">
-                        <label for="instagram">Instagram</label><br>
+                            <input type="radio" id="instagram" name="referral" value="instagram">
+                            <label for="instagram">Instagram</label><br>
 
-                        <input type="radio" id="find-friend" name="referral" value="friend">
-                        <label for="find-friend">Friend or Colleague</label>
+                            <input type="radio" id="find-friend" name="referral" value="friend">
+                            <label for="find-friend">Friend or Colleague</label>
+                        </div>
+                    </div>
 
-                        
-                    </p>
-
-                    <p>
-                        <label for="message">Your Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Leave  your message here..." required></textarea>
-                    </p>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Leave your message here..." required class="form-textarea"></textarea>
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Optional Information</legend>
                     
-                    <p>
-                        <label for="contact-date">Preferred Contact Date:</label><br>
-                        <input type="date" id="contact-date" name="contact-date">
-                    </p>
+                    <div class="form-group">
+                        <label for="contact-date" class="form-label">Preferred Contact Date:</label>
+                        <input type="date" id="contact-date" name="contact-date" class="form-input">
+                    </div>
 
-                    <p>
-                        <label for="fav-color">What is your Favorite Color:</label><br>
-                        <input type="color" id="fav-color" name="fav-color" value="#ff0000">
-                    </p>
+                    <div class="form-group">
+                        <label for="fav-color" class="form-label">What is your Favorite Color:</label>
+                        <input type="color" id="fav-color" name="fav-color" value="#ff0000" style="height: 40px; width: 100px; border: 1px solid var(--border-gray); background: none; cursor: pointer;">
+                    </div>
 
-                    <p>
-                        <label for="site-rating">Rate My Website (1–10):</label><br>
-                        <input type="range" id="site-rating" name="site-rating" min="1" max="10" value="7">
-                    </p>
+                    <div class="form-group">
+                        <label for="site-rating" class="form-label">Rate My Website (1–10):</label>
+                        <input type="range" id="site-rating" name="site-rating" min="1" max="10" value="7" style="width: 100%;">
+                    </div>
 
-                    <p>
+                    <div class="form-group">
                         <input type="checkbox" id="reply-request" name="reply-request" value="yes">
                         <label for="reply-request">I would like a reply to my message.</label>
-                    </p>
+                    </div>
                 </fieldset>
 
-                <br>
                 <button type="submit">Submit Message</button>
                 <button type="reset">Clear Form</button>
 
             </form>
         </section>
 
-        <section>
-            <h2>Other Ways to Connect</h2>
-            <p>You can also connect with me through professional networks or other platforms.</p>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">Other Ways to Connect</h2>
+            <p class="body-text">You can also connect with me through professional networks or other platforms.</p>
+            <ul class="styled-list">
                 <li><a href="https://linkedin.com/in/roba-gm" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li><a href="https://https://github.com/roba-gm" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://github.com/roba-gm" target="_blank" rel="noopener">GitHub</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
-        <p>&copy; 2026 Personal website.</p>
-        <p>Thank you for visiting my website.</p>
-        <p><a href="index.html">Return to Home</a></p>
+        <p class="footer-text">&copy; 2026 Personal website.</p>
+        <p class="footer-text">Thank you for visiting my website.</p>
+        <p class="footer-text"><a href="index.html" class="nav-link">Return to Home</a></p>
     </footer>
 
 </body>

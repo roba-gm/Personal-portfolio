@@ -3,69 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home -Roba's Personal Profile Website</title>
+    <title>Home - Roba's Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-home">
 
-    <header>
-        <h1>Welcome to My Webpage!</h1>
-        <p><strong>Hello, I'm a Student & Future Software & Network Engineer.</strong></p>
-        <p>Student | Network & Software Specialist | Lifelong Learner</p>
+    <header id="main-header">
+        <div class="header-inner">
+            <div>
+                <h1 id="site-title">Welcome to My Webpage!</h1>
+                <p class="site-subtitle">Hello, I'm a Student &amp; Future Software &amp; Network Engineer.</p>
+                <p class="muted-text">Student | Network &amp; Software Specialist | Lifelong Learner</p>
+            </div>
+        </div>
     </header>
 
-    <main>
-    
-        <figure>
-            <img src="images/profile.jpg" alt="Profile photo" width="180" height="200">
-        </figure>
+    <main id="main-content">
+        
+        <section id="hero-section" class="page-section">
+            <div class="profile-layout">
+                <figure class="profile-figure">
+                    <img src="images/profile.jpg" alt="Profile photo" width="180" height="200" class="profile-image">
+                </figure>
+                <div>
+                    <p class="body-text">I am passionate about software engineering, computer networking, and cybersecurity, continually developing technical skills to build impactful real-world solutions.</p>
+                </div>
+            </div>
+        </section>
 
-        <p>I am passionate about software engineering, computer networking, and cybersecurity, continually developing technical skills to build impactful real-world solutions.</p>
-
-        <section>
-            <h2>Explore My Website</h2>
-            <nav>
-                <a href="index.html">  Home</a> | 
-                <a href="about.html">  About Me</a> | 
-                <a href="skills.html">  Skills </a> | 
-                <a href="projects.html">  Projects </a> | 
-                <a href="media.html">  My Media </a> | 
-                <a href="contact.html">  Contact Me</a>
+        <section id="nav-section" class="page-section">
+            <h2 class="section-heading">Explore My Website</h2>
+            <nav class="navbar-block">
+                <a href="index.html" class="nav-link active">Home</a> | 
+                <a href="about.html" class="nav-link">About Me</a> | 
+                <a href="skills.html" class="nav-link">Skills</a> | 
+                <a href="projects.html" class="nav-link">Projects</a> | 
+                <a href="media.html" class="nav-link">My Media</a> | 
+                <a href="contact.html" class="nav-link">Contact Me</a>
             </nav>
         </section>
 
-        <section>
-            <h2>A Little About Me</h2>
-            <p>I am someone who believes in continuous improvement. I enjoy building backend logic, simulating enterprise networks, designing web tools, and solving complex algorithmic challenges.</p>
-            <p><a href="about.html">Discover my story</a></p>
+        <section id="about-intro-section" class="page-section">
+            <h2 class="section-heading">A Little About Me</h2>
+            <p class="body-text">I am someone who believes in continuous improvement. I enjoy building backend logic, simulating enterprise networks, designing web tools, and solving complex algorithmic challenges.</p>
+            <p><a href="about.html" class="btn-primary">Discover my story</a></p>
         </section>
 
-        <section>
-            <h2>What I'm Working Toward</h2>
-            <ul>
+        <section id="goals-section" class="page-section">
+            <h2 class="section-heading">What I'm Working Toward</h2>
+            <ul class="styled-list">
                 <li>Mastering backend software architecture and cloud infrastructure (AWS)</li>
                 <li>Configuring advanced network security and enterprise routing architectures</li>
                 <li>Developing automated digital tools and student-centric software applications</li>
             </ul>
-            <p><a href="skills.html">Explore my skills</a></p>
+            <p><a href="skills.html" class="btn-primary">Explore my skills</a></p>
         </section>
 
-        <section>
-            <h2>My Personal Motto</h2>
-            <blockquote>
+        <section id="motto-section" class="page-section">
+            <h2 class="section-heading">My Personal Motto</h2>
+            <blockquote class="body-text">
                 <p><em>"Today's small steps are foundation for tomorrow's big achievement."</em></p>
             </blockquote>
         </section>
 
-        <section>
-            <h2>Explore My Work</h2>
-            <p>Visit my <a href="projects.html">projects and achievements</a> to see what I have created and learned.</p>
+        <section id="work-explore-section" class="page-section">
+            <h2 class="section-heading">Explore My Work</h2>
+            <p class="body-text">Visit my <a href="projects.html">projects and achievements</a> to see what I have created and learned.</p>
         </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
-        <p>&copy; 2026 Personal Website.</p>
-        <p><a href="contact.html">Get in touch</a></p>
+        <p class="footer-text">&copy; 2026 Personal Website.</p>
+        <p class="footer-text"><a href="contact.html" class="nav-link">Get in touch</a></p>
     </footer>
 
 </body>

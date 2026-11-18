@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills & Education - Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-skills">
 
-    <header>
-        <h1>My Skills &amp; Education</h1>
-        <p>What I have learned and what I am learning next.</p>
-        <nav>
-            <a href="index.html">  Home</a> | 
-            <a href="about.html">  About Me</a> | 
-            <a href="skills.html">  Skills </a> | 
-            <a href="projects.html">  Projects </a> | 
-            <a href="media.html">  My Media </a> | 
-            <a href="contact.html"> Contact Me</a>
-        </nav>
+    <header id="main-header">
+        <div class="header-inner">
+            <div>
+                <h1 id="site-title">My Skills &amp; Education</h1>
+                <p class="site-subtitle">What I have learned and what I am learning next.</p>
+            </div>
+            <nav class="navbar-block">
+                <a href="index.html" class="nav-link">Home</a> | 
+                <a href="about.html" class="nav-link">About Me</a> | 
+                <a href="skills.html" class="nav-link active">Skills</a> | 
+                <a href="projects.html" class="nav-link">Projects</a> | 
+                <a href="media.html" class="nav-link">My Media</a> | 
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>My Education</h2>
-            <table border="1">
+    <main id="main-content">
+        <section class="page-section">
+            <h2 class="section-heading">My Education</h2>
+            <table class="data-table">
                 <caption>My Educational Background</caption>
                 <thead>
                     <tr>
@@ -45,12 +50,12 @@
                     </tr>
                 </tbody>
             </table>
-            <p><small>Note: Education details represent current academic standing and background.</small></p>
+            <p class="muted-text">Note: Education details represent current academic standing and background.</p>
         </section>
 
-        <section>
-            <h2>My Technical Skills</h2>
-            <table border="1">
+        <section class="page-section">
+            <h2 class="section-heading">My Technical Skills</h2>
+            <table class="data-table">
                 <caption>Skills I Am Developing</caption>
                 <thead>
                     <tr>
@@ -79,62 +84,62 @@
             </table>
         </section>
 
-        <section>
-            <h2>My Learning Progress</h2>
-            <p>
-                <label for="html-progress">My programming progress:</label><br>
+        <section class="page-section">
+            <h2 class="section-heading">My Learning Progress</h2>
+            <p class="body-text">
+                <label for="html-progress" class="form-label">My programming progress:</label><br>
                 <progress id="html-progress" value="55" max="100">55%</progress> 60%
             </p>
-            <p>
-                <label for="computer-confidence">Confidence in computer skills:</label><br>
+            <p class="body-text">
+                <label for="computer-confidence" class="form-label">Confidence in computer skills:</label><br>
                 <meter id="computer-confidence" value="8" min="0" max="10">8 out of 10</meter> 8 out of 10
             </p>
-            <p><small>These values are self-assessments representing personal progress.</small></p>
+            <p class="muted-text">These values are self-assessments representing personal progress.</p>
         </section>
 
-        <section>
-            <h2>What I Am Learning</h2>
-            <dl>
+        <section class="page-section">
+            <h2 class="section-heading">What I Am Learning</h2>
+            <dl class="styled-list">
                 <dt><strong>Web Development</strong></dt>
-                <dd>Understanding how websites work.</dd>
+                <dd class="body-text">Understanding how websites work.</dd>
 
                 <dt><strong>Network Engineering</strong></dt>
-                <dd>Understanding the OSI model, TCP/IP stack, VLANs, and routing protocols like OSPF and RIP.</dd>
+                <dd class="body-text">Understanding the OSI model, TCP/IP stack, VLANs, and routing protocols like OSPF and RIP.</dd>
 
                 <dt><strong>Problem Solving</strong></dt>
-                <dd>The ability to analyze technical problems and develop efficient algorithmic solutions.</dd>
+                <dd class="body-text">The ability to analyze technical problems and develop efficient algorithmic solutions.</dd>
             </dl>
         </section>
 
-        <section>
-            <h2>My Learning Plan</h2>
-            <details>
-                <summary>What am I learning this month?</summary>
-                <p>Focusing on advanced semantic HTML5 page structuring,  and object-oriented programming principles.</p>
+        <section class="page-section">
+            <h2 class="section-heading">My Learning Plan</h2>
+            <details class="body-text">
+                <summary><strong>What am I learning this month?</strong></summary>
+                <p>Focusing on advanced semantic HTML5 page structuring, and object-oriented programming principles.</p>
             </details>
-            <details>
-                <summary>What do I want to learn next?</summary>
+            <details class="body-text">
+                <summary><strong>What do I want to learn next?</strong></summary>
                 <p>CSS styling techniques, JavaScript for front-end interactivity, and backend cloud architecture with AWS.</p>
             </details>
-            <details>
-                <summary>How will I improve my skills?</summary>
+            <details class="body-text">
+                <summary><strong>How will I improve my skills?</strong></summary>
                 <p>By building real projects, completing hands-on practical lab exercises, and contributing to software repositories.</p>
             </details>
         </section>
 
-        <section>
-            <h2>Useful Learning Resources</h2>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">Useful Learning Resources</h2>
+            <ul class="styled-list">
                 <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs Documentation</a></li>
                 <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools Web Tutorials</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
-        <p>&copy; 2026 Personal website.</p>
-        <p><a href="index.html">Return to Home</a></p>
+        <p class="footer-text">&copy; 2026 Personal website.</p>
+        <p class="footer-text"><a href="index.html" class="nav-link">Return to Home</a></p>
     </footer>
 
 </body>

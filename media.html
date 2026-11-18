@@ -4,78 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Media-> Roba's Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-media">
 
-    <header>
-        <h1>My Media </h1>
-        <p>The music I enjoy, the videos I watch, and the things I love learning.</p>
-        <nav>
-            <a href="index.html">  Home</a> | 
-            <a href="about.html"> About Me</a> | 
-            <a href="skills.html">  Skills </a> | 
-            <a href="projects.html">  Projects </a> | 
-            <a href="media.html">  My Media </a> | 
-            <a href="contact.html">  Contact Me</a>
-        </nav>
+    <header id="main-header">
+        <div class="header-inner">
+            <div>
+                <h1 id="site-title">My Media</h1>
+                <p class="site-subtitle">The music I enjoy, the videos I watch, and the things I love learning.</p>
+            </div>
+            <nav class="navbar-block">
+                <a href="index.html" class="nav-link">Home</a> | 
+                <a href="about.html" class="nav-link">About Me</a> | 
+                <a href="skills.html" class="nav-link">Skills</a> | 
+                <a href="projects.html" class="nav-link">Projects</a> | 
+                <a href="media.html" class="nav-link active">My Media</a> | 
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Music from my collection </h2>
-            <p>Music of futuristic technology.</p>
+    <main id="main-content">
+        <section class="page-section">
+            <h2 class="section-heading">Music from my collection</h2>
+            <p class="body-text">Music of futuristic technology.</p>
             
-            <audio controls>
-                <source src="media/sample-audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            
-            
+            <div class="media-wrapper">
+                <audio controls class="portfolio-audio">
+                    <source src="media/sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </section>
 
-        <hr>
-
-        <section>
-            <h2>Video from may collection</h2>
-            <h3>A Video of Smart city model</h3>
+        <section class="page-section">
+            <h2 class="section-heading">Video from may collection</h2>
+            <h3 class="subsection-heading">A Video of Smart city model</h3>
             
-            <video width="500" controls poster="images/media-thumbnail.jpg">
-                <source src="media/sample-video.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
+            <div class="media-wrapper">
+                <video width="500" controls poster="images/media-thumbnail.jpg" class="portfolio-video">
+                    <source src="media/sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h2 class="section-heading">Learn from YouTube</h2>
+            <p class="body-text">I use online videos to learn new skills and explore ideas. The embedded video below is an example.</p>
             
-            </section>
+            <div class="media-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=HGTJBPNC-Gw&pp=ygUEaHRtbA%3D%3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="doc-frame" style="height: 315px;"></iframe>
+            </div>
+        </section>
 
-        <hr>
-
-        <section>
-            <h2>Learn from YouTube</h2>
-            <p>I use online videos to learn new skills and explore ideas. The embedded video below is an example.</p>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=HGTJBPNC-Gw&pp=ygUEaHRtbA%3D%3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            </section>
-
-        <hr>
-
-        <section>
-            <h2>Topics I Enjoy Exploring</h2>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">Topics I Enjoy Exploring</h2>
+            <ul class="styled-list">
                 <li>Technology
-                    <ul>
+                    <ul class="styled-list">
                         <li>Web development</li>
                         <li>Software engineering</li>
                         <li>Enterprise Network Engineering &amp; Security</li>
                     </ul>
                 </li>
                 <li>Personal development
-                    <ul>
+                    <ul class="styled-list">
                         <li>Communication</li>
                         <li>Leadership &amp; Team Collaboration</li>
                     </ul>
                 </li>
                 <li>Other interests
-                    <ul>
+                    <ul class="styled-list">
                         <li>Interactive Web Audio Synthesis</li>
                         <li>Graphic Design &amp; Digital Assets</li>
                     </ul>
@@ -83,19 +84,19 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Useful Learning Resources</h2>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">Useful Learning Resources</h2>
+            <ul class="styled-list">
                 <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube Educational Channels</a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Media" target="_blank" rel="noopener">MDN Web Media Guide</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
-        <p>&copy; 2026 Personal website.</p>
-        <p><a href="index.html">Return to Home</a></p>
+        <p class="footer-text">&copy; 2026 Personal website.</p>
+        <p class="footer-text"><a href="index.html" class="nav-link">Return to Home</a></p>
     </footer>
 
 </body>

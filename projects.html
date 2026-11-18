@@ -4,62 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects & Achievements - Personal Profile Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-projects">
 
-    <header>
-        <h1>My Projects </h1>
-        <p>A record of what I create, practise, and accomplish.</p>
-        <nav>
-            <a href="index.html">  Home</a> | 
-            <a href="about.html"> About Me</a> | 
-            <a href="skills.html">  Skills </a> | 
-            <a href="projects.html"> Projects</a> | 
-            <a href="media.html">  My Media </a> | 
-            <a href="contact.html">  Contact Me</a>
-        </nav>
+    <header id="main-header">
+        <div class="header-inner">
+            <div>
+                <h1 id="site-title">My Projects</h1>
+                <p class="site-subtitle">A record of what I create, practise, and accomplish.</p>
+            </div>
+            <nav class="navbar-block">
+                <a href="index.html" class="nav-link">Home</a> | 
+                <a href="about.html" class="nav-link">About Me</a> | 
+                <a href="skills.html" class="nav-link">Skills</a> | 
+                <a href="projects.html" class="nav-link active">Projects</a> | 
+                <a href="media.html" class="nav-link">My Media</a> | 
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Featured Projects</h2>
+    <main id="main-content">
+        <section class="page-section">
+            <h2 class="section-heading">Featured Projects</h2>
 
-            <article>
-                <h3>Project 1: Web-Based Audio Synthesizer App</h3>
+            <article class="info-card" style="margin-bottom: 2rem;">
+                <h3 class="card-title">Project 1: Web-Based Audio Synthesizer App</h3>
                 <figure>
-                    <img src="images/project1.png" alt="Screenshot of Web-Based Audio Synthesizer Interface" width="450">
-                    <figcaption>A single-window web-based audio synthesizer application built with custom scale mapping and loop presets.</figcaption>
+                    <img src="images/project1.png" alt="Screenshot of Web-Based Audio Synthesizer Interface" width="450" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    <figcaption class="muted-text">A single-window web-based audio synthesizer application built with custom scale mapping and loop presets.</figcaption>
                 </figure>
-                <p>This project helped me understand how client-side web technologies and Web Audio APIs structure interactive multimedia applications.</p>
+                <p class="body-text">This project helped me understand how client-side web technologies and Web Audio APIs structure interactive multimedia applications.</p>
                 
-                <h4>What I Learned</h4>
-                <ul>
+                <h4 class="subsection-heading">What I Learned</h4>
+                <ul class="styled-list">
                     <li>Creating interactive user interfaces using structured HTML</li>
                     <li>Mapping keyboard inputs to synth logic and sound generators</li>
                     <li>Managing media assets and loop beat selectors efficiently</li>
                 </ul>
             </article>
 
-            <hr>
+            <hr style="border: 0; border-top: 1px solid var(--border-gray); margin: 2rem 0;">
 
-            <article>
-                <h3>Project 2: Personal Portfolio Website</h3>
+            <article class="info-card">
+                <h3 class="card-title">Project 2: Personal Portfolio Website</h3>
                 <figure>
-                    <img src="images/project2.png" alt="Preview layout of personal portfolio website" width="450">
-                    <figcaption>A multi-page static website documenting my learning and development.</figcaption>
+                    <img src="images/project2.png" alt="Preview layout of personal portfolio website" width="450" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    <figcaption class="muted-text">A multi-page static website documenting my learning and development.</figcaption>
                 </figure>
-                <p>This website brings together my background, skills, projects, interests, and contact information into a structured HTML foundation.</p>
+                <p class="body-text">This website brings together my background, skills, projects, interests, and contact information into a structured HTML foundation.</p>
                 
-                <h4>Website Sections</h4>
-                <ol>
+                <h4 class="subsection-heading">Website Sections</h4>
+                <ol class="styled-list">
                     <li>Personal information
-                        <ul>
+                        <ul class="styled-list">
                             <li>Biography</li>
                             <li>Education &amp; Background</li>
                         </ul>
                     </li>
                     <li>My work
-                        <ul>
+                        <ul class="styled-list">
                             <li>Projects &amp; Technical Labs</li>
                             <li>Achievements &amp; Certificates</li>
                         </ul>
@@ -68,25 +73,25 @@
             </article>
         </section>
 
-        <section>
-            <h2>Achievements</h2>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">Achievements</h2>
+            <ul class="styled-list">
                 <li><strong>Learning achievement:</strong> Designed and deployed a complete 6-page semantic HTML website structure.</li>
                 <li><strong>Academic achievement:</strong> Participated in the AASTU GDG capistone..</li>
                 <li><strong>Personal achievement:</strong> Built object-oriented transactional ledger programs and automated ordering flows.</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Project Files</h2>
-            <p>Visitors can use the link below to download a sample project document.</p>
-            <p><a href="docs/Project-Report.pdf" download="Project-Report-2026.pdf">Download My Project Report (PDF)</a></p>
+        <section class="page-section">
+            <h2 class="section-heading">Project Files</h2>
+            <p class="body-text">Visitors can use the link below to download a sample project document.</p>
+            <p><a href="docs/Project-Report.pdf" download="Project-Report-2026.pdf" class="btn-primary">Download My Project Report (PDF)</a></p>
         </section>
 
-        <section>
-            <h2>My Next Goals</h2>
-            <p>My future projects will help me develop these abilities:</p>
-            <ul>
+        <section class="page-section">
+            <h2 class="section-heading">My Next Goals</h2>
+            <p class="body-text">My future projects will help me develop these abilities:</p>
+            <ul class="styled-list">
                 <li>Build a complete website with several connected pages.</li>
                 <li>Learn CSS to improve the appearance of my website.</li>
                 <li>Learn JavaScript to make my website interactive.</li>
@@ -94,10 +99,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <hr>
-        <p>&copy; 2026 Personal website.</p>
-        <p><em>Every project is an opportunity to learn something new.</em></p>
+        <p class="footer-text">&copy; 2026 Personal website.</p>
+        <p class="footer-text"><em>Every project is an opportunity to learn something new.</em></p>
     </footer>
 
 </body>
